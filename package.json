@@ -1,0 +1,22 @@
+{
+  "name": "tilestrata-warmer",
+  "version": "0.0.0",
+  "description": "Utility to warm up your tilestrata server cache",
+  "main": "index.js",
+  "license": "none",
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  },
+  "scripts": {
+    "prod:build": "rimraf lib && babel src -d lib --ignore .test.js",
+    "start": "babel-node src"
+  },
+  "dependencies": {
+    "@mapbox/tilebelt": "^1.0.1",
+    "@turf/bbox-polygon": "^6.0.1",
+    "@turf/intersect": "^6.1.1",
+    "babel-preset-env": "^1.6.1",
+    "bluebird": "^3.5.1",
+    "cli-progress": "^1.8.0"
+  }
+}
